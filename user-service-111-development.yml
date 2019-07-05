@@ -1,1 +1,2 @@
-msg = finally got it
+msg:
+  name: finally got it
