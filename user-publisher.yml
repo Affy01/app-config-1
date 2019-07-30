@@ -3,7 +3,7 @@ spring:
     gcp:
       project-id: firestore-spring
       credentials:
-        location: file:src/main/resources/service-account.json
+        location: classpath:src/main/resources/service-account.json
     stream:
       gcp:
         pubsub:
