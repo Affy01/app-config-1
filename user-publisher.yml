@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gcp:
+      project-id: firestore-spring
+      credentials:
+        location: file:src/main/resources/service-account.json
+    stream:
+      gcp:
+        pubsub:
+          bindings:
+            output:
+              consumer:
+                auto-create-resources: true
+      bindings:
+        user-request:
+          destination: user-request
+          producer:
+            required-groups: user-group-request
+        user-response:
+          destination: user-response
+          group: user-group-response
