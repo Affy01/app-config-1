@@ -1,5 +1,16 @@
 spring:
   cloud:
+    gcp:
+      project-id: firestore-spring
+      credentials:
+        location: classpath:service-account.json
+    stream:
+      gcp:
+        pubsub:
+          bindings:
+            output:
+              consumer:
+                auto-create-resources: true
     stream:
       bindings:
         user-request:
