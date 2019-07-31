@@ -1,1 +1,3 @@
 
+zuul.routes.user-publisher.path= /users/**
+zuul.routes.user-publisher.serviceId= USER-PUBLISHER
