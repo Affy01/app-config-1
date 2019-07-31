@@ -4,3 +4,5 @@ zuul:
     user-publisher:
       path: /users/**
       serviceId: USER-PUBLISHER
+  ignoredHeaders:
+    - authorization
