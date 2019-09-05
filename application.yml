@@ -29,3 +29,5 @@ info: # add this section
 endpoint:
   health:
     show-details: always
+
+greeting: test
