@@ -30,5 +30,6 @@ endpoint:
   health:
     show-details: always
 
+greeting: hellno
 
 
