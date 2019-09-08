@@ -1,0 +1,21 @@
+spring:
+  profiles: cloud
+  jpa:
+    hibernate:
+      ddl-auto: create
+  main:
+    allow-bean-definition-overriding: true
+
+
+
+management:
+  cloudfoundry:
+    enabled: true
+    skip-ssl-validation: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
