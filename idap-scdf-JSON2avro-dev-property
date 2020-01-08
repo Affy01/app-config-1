@@ -1,9 +1,7 @@
 spring.cloud.stream.bindings:
   input:
-    destination: ${application.source-topic-name}
     group: ${application.group}
   output:
-    destination: ${application.dest-topic-name}
     contentType: application/*+avro
 
 
