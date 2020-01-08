@@ -1,11 +1,9 @@
 spring.cloud.stream:
       bindings:
         message-in:
-          destination: ${application.source-topic}
           binder: kafka2
           group: ${application.source-group-name}
         output:
-          destination: ${application.dest-topic}
           binder: kafka1
       binders:
         kafka1:
