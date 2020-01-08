@@ -4,9 +4,11 @@ spring.cloud.stream:
           useNativeEncoding: true
       bindings:
         input:
+          destination: ${application.source-topic-name}
           group: ${application.group}
           contentType: application/*+avro
         output:
+          destination: ${application.dest-topic-name}
       kafka:
         binder:
           consumer-properties:
