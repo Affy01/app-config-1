@@ -17,20 +17,20 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 application:
-  sourceTopicName: property-gcs
+  sourceTopicName: media-gcs
   keyTTL: 60
   keyMapName: listing
-  deadLetterTopic: property-ingester-dead
+  deadLetterTopic: media-ingester-dead
   maxRetries: 2
-  group: property-group-ingestor
+  group: media-group-ingestor
 
 message:
   parent: false
   parentRecordName: listing
-  childRecordName: property
-  collection: false
-  parentKey: ListingKey
-  messageKey: ListingKey
+  childRecordName: media
+  collection: true
+  parentKey: ResourceRecordKey
+  messageKey: MediaKey
 
 
 server:
