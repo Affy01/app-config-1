@@ -16,16 +16,16 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 application:
-  sourceTopicName: listing-elastic
+  sourceTopicName: listings
   destTopicName: listing-change
   schemaRegistryPath: http://localhost:8081
   schemaRegistryCacheCapacity: 1
-  deadLetterTopic: member-elastic-dead
+  deadLetterTopic: listings-elastic-dead
   maxRetries: 2
-  group: member-group-elastic
+  group: listings-group-elastic
 
 message:
-  indexName: listing-new
+  indexName: listings
   idFieldKey: id
   idPrefix: aotf
   delimiter: ~
