@@ -40,8 +40,8 @@ elasticsearch:
   schema: http
   host: localhost
   port: 9200
-  username: ''
-  password: ''
+  username: temp
+  password: temp
   connectTimeout: 10000
   socketTimeout: 10000
   maxRetryTimeout: 10000
