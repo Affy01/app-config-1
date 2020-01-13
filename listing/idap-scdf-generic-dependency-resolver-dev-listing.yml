@@ -16,7 +16,7 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 app:
-  destTopicName: listing-elastic
+  destTopicName: listings
   sourceTopicName: listing-key
   keyTTL: 60
   keyMapName: listing
