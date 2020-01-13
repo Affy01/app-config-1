@@ -16,21 +16,21 @@ spring.cloud.stream:
 
 application:
   bucketName: spring-gcp-storage-test
-  sourceTopicName: media
-  destTopicName: media-gcs
-  group: media-group-gcs
+  sourceTopicName: rooms
+  destTopicName: rooms-gcs
+  group: rooms-group-gcs
   schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
-  deadLetterTopic: media-dead
+  deadLetterTopic: rooms-dead
   maxRetries: 2
 
 
 message:
-  messageKey: MediaKey
-  parentKey: ResourceRecordKey
-  blobFileKeys: MediaKey,Nucleus_PostDate
+  messageKey: RoomKey
+  parentKey: ListingKey
+  blobFileKeys: ListingKey,RoomKey,Nucleus_PostDate
   delimiter: _
-  filePrefix: Media
+  filePrefix: Rooms
 
 server:
   port: 0
