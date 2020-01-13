@@ -29,6 +29,11 @@ message:
   idFieldKey: id
   idPrefix: aotf
   delimiter: ~
+   propDisableAutoIndex:
+    - media
+    - unitType
+    - rooms
+    - openHouse
 
 
 elasticsearch:
