@@ -26,7 +26,7 @@ application:
 message:
   messageKey: RoomKey
   parentKey: ListingKey
-  blobFileKeys: ListingKey,RoomKey,Nucleus_PostDate
+  blobFileKeys: RoomKey,Nucleus_PostDate
   delimiter: _
   filePrefix: Rooms
 
