@@ -17,7 +17,6 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 application:
-  sourceTopicName: property-gcs
   keyTTL: 60
   keyMapName: listing
   deadLetterTopic: property-ingester-dead
