@@ -1,6 +1,5 @@
 spring.cloud.stream.bindings:
   input:
-    destination: testRoom
     group: ${application.group}
   output:
     contentType: application/*+avro
