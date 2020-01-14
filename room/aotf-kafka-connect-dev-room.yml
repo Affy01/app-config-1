@@ -5,7 +5,6 @@ spring.cloud.stream:
           binder: kafka2
           group: ${application.source-group-name}
         output:
-          destination : testRoom
           binder: kafka1
       binders:
         kafka1:
