@@ -1,0 +1,39 @@
+spring.cloud.stream:
+      bindings:
+        message-in:
+          destination: ${application.source-topic}
+          binder: kafka2
+          group: ${application.source-group-name}
+        output:
+          binder: kafka1
+      binders:
+        kafka1:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream:
+                  kafka:
+                    binder:
+                      brokers: ${application.dest-host}
+        kafka2:
+          type: kafka
+          environment:
+            spring:
+              cloud:
+                stream:
+                  kafka:
+                    binder:
+                      brokers: ${application.source-host}
+      default-binder: kafka1
+
+application:
+  sourceHost: kafka-main.preprod.idap.clgx.cloud:9092
+  destHost: localhost:9092
+  sourceTopic: v4_Elastic_Media
+  destTopic: media-in
+  sourceGroupName: src_group-media
+
+
+server:
+  port: 0
