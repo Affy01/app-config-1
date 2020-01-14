@@ -1,0 +1,49 @@
+spring.cloud.stream.bindings:
+  input:
+    group: ${application.group}
+  output:
+    contentType: application/*+avro
+
+spring.cloud.stream:
+  kafka:
+    binder:
+      brokers: localhost
+      producer-properties:
+        value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+        schema.registry.url: ${application.schema-registry-url}
+
+spring.cloud.stream.default:
+  producer:
+    useNativeEncoding: true
+
+spring.cloud.stream.kafka.bindings:
+  input:
+    consumer:
+      enableDlq: true
+      dlqName: ${application.dead-letter-topic}
+      autoCommitOnError: true
+      autoCommitOffset: true
+      republish-to-dlq: true
+
+application:
+  schemaRegistryUrl: http://localhost:8081
+  schemaRegistryCacheCapacity: 10
+  schemaFilePath: /Users/rahulgoyal/Downloads/avro/media-schema.avsc
+  sourceTopicName: media-in
+  destTopicName: media
+  deadLetterTopic: media-dead
+  group: media-group
+  maxRetries: 2
+
+message:
+  messageKey: MediaKey
+  parentKey: ResourceRecordKey
+  recordToProcess:
+    OriginatingSystemName:
+      - RAIRC
+      - SWMT
+      - TRESTLE_TEST
+      - WESTAL
+
+server:
+  port: 0
