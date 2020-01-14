@@ -28,7 +28,7 @@ spring.cloud.stream.kafka.bindings:
 application:
   schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
-  schemaFilePath: /Users/rahulgoyal/aotf/core-logic/data-pipeline/idap-scdf-JSON2avro/src/main/resources/avro/property-room-schema.avsc
+  schemaFilePath: /avro/property-room-schema.avsc
   deadLetterTopic: rooms-dead-jsonAvro
   group: rooms-group-jsonAvro
   maxRetries: 2
