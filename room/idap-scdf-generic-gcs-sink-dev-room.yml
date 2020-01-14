@@ -16,12 +16,10 @@ spring.cloud.stream:
 
 application:
   bucketName: spring-gcp-storage-test
-  sourceTopicName: rooms
-  destTopicName: rooms-gcs
   group: rooms-group-gcs
   schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
-  deadLetterTopic: rooms-dead
+  deadLetterTopic: rooms-dead-gcs
   maxRetries: 2
 
 
