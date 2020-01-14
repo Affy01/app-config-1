@@ -16,8 +16,6 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 app:
-  destTopicName: listings
-  sourceTopicName: listing-key
   keyTTL: 60
   keyMapName: listing
   bucketName: spring-gcp-storage-test
@@ -29,7 +27,6 @@ app:
   keywords:
     - Appliances
     - LotFeatures
-
 
 server:
   port: 0
