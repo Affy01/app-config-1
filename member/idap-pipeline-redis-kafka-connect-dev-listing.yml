@@ -1,0 +1,10 @@
+spring:
+  redis:
+    host: localhost
+
+application:
+  destTopicName: listing-key
+  redisMap: listing
+
+server:
+  port: 0

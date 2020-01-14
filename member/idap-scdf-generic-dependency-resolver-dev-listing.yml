@@ -1,0 +1,35 @@
+spring.cloud.stream.bindings:
+  input:
+    group: ${app.group}
+    consumer:
+      max-attempts: ${app.max-retries}
+  redis:
+    host: localhost
+
+spring.cloud.stream.kafka.bindings:
+  input:
+    consumer:
+      enableDlq: true
+      dlqName: ${app.dead-letter-topic}
+      autoCommitOnError: true
+      autoCommitOffset: true
+      republish-to-dlq: true
+
+app:
+  destTopicName: listing-elastic
+  sourceTopicName: listing-key
+  keyTTL: 60
+  keyMapName: listing
+  bucketName: spring-gcp-storage-test
+  deadLetterTopic: resolver-listing-dead
+  group: listing-group-resolver
+  maxRetries: 2
+  mediaUrlConfigFile: MediaSizes_Across_MatrixSystems_2019-10-30.xlsx
+  sheetName: Recommended
+  keywords:
+    - Appliances
+    - LotFeatures
+
+
+server:
+  port: 0
