@@ -16,8 +16,6 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 application:
-  sourceTopicName: listings
-  destTopicName: listing-change
   schemaRegistryPath: http://localhost:8081
   schemaRegistryCacheCapacity: 1
   deadLetterTopic: listings-elastic-dead
