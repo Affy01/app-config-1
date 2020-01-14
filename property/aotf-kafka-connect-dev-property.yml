@@ -31,8 +31,7 @@ application:
   sourceHost: kafka-main.preprod.idap.clgx.cloud:9092
   destHost: localhost:9092
   sourceTopic: v4_Elastic_Property
-  destTopic: property-in
-  sourceGroupName: src_group
+  sourceGroupName: property_source_group
 
 
 server:
