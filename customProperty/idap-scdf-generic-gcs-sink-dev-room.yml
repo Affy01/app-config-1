@@ -1,0 +1,36 @@
+spring.cloud.stream:
+      default:
+        consumer:
+          useNativeEncoding: true
+      bindings:
+        input:
+          group: ${application.group}
+          contentType: application/*+avro
+      kafka:
+        binder:
+          consumer-properties:
+            value.deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+            schema.registry.url: ${application.schema-registry-url}
+            specific.avro.reader: false
+
+
+application:
+  bucketName: spring-gcp-storage-test
+  sourceTopicName: media
+  destTopicName: media-gcs
+  group: media-group-gcs
+  schemaRegistryUrl: http://localhost:8081
+  schemaRegistryCacheCapacity: 10
+  deadLetterTopic: media-dead
+  maxRetries: 2
+
+
+message:
+  messageKey: MediaKey
+  parentKey: ResourceRecordKey
+  blobFileKeys: MediaKey,Nucleus_PostDate
+  delimiter: _
+  filePrefix: Media
+
+server:
+  port: 0
