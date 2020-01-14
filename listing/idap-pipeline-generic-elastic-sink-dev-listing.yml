@@ -26,12 +26,12 @@ message:
   indexName: listings
   idFieldKey: id
   idPrefix: aotf
+  delimiter: ~
   propDisableAutoIndex:
     - media
     - unitType
     - rooms
     - openHouse
-  delimiter: ~
 
 
 elasticsearch:
