@@ -16,12 +16,10 @@ spring.cloud.stream:
 
 application:
   bucketName: spring-gcp-storage-test
-  sourceTopicName: media
-  destTopicName: media-gcs
   group: media-group-gcs
   schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
-  deadLetterTopic: media-dead
+  deadLetterTopic: media-dead-gcs
   maxRetries: 2
 
 
