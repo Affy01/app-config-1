@@ -30,8 +30,7 @@ spring.cloud.stream:
 application:
   sourceHost: kafka-main.preprod.idap.clgx.cloud:9092
   destHost: localhost:9092
-  sourceTopic: v4_Elastic_Media
-  destTopic: media-in
+  sourceTopic: v0611_Elastic_CustomProperty
   sourceGroupName: src_group-media
 
 
