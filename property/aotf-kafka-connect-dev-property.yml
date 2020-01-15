@@ -30,7 +30,7 @@ spring.cloud.stream:
 application:
   sourceHost: kafka-main.preprod.idap.clgx.cloud:9092
   destHost: localhost:9092
-  sourceTopic: v4_Elastic_Property
+  sourceTopic: vx1_Elastic_Property
   sourceGroupName: property_source_group
 
 
