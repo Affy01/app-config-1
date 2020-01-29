@@ -18,15 +18,25 @@ spring.cloud.stream.kafka.bindings:
 app:
   keyTTL: 60
   keyMapName: listing
-  bucketName: spring-gcp-storage-test
+  bucketName: aotf-listing-events
+  gcsServiceAccountFile: /gcs_bucket_service_account.json
   deadLetterTopic: resolver-listing-dead
   group: listing-group-resolver
   maxRetries: 2
-  mediaUrlConfigFile: MediaSizes_Across_MatrixSystems_2019-10-30.xlsx
+  mediaUrlConfigFile: /MS_RESULTS_MediaSizes_2020jan06.xlsx
   sheetName: Recommended
   keywords:
     - Appliances
     - LotFeatures
-
-server:
-  port: 0
+  dprMLS:
+    MIBOR: MIBOR
+    FMLSD: FMLS
+    NEOHREX: NEOHREX
+    ACTRIS: ACTRIS
+  ratePlugMls:
+    CML: CAROLINAMLS
+    FLL: RAGFL
+    FMLSD: FMLS
+    ACTRIS: ACTRIS
+  dprBaseUrl: www.workforce-resource.com/dpr/listing
+  ratePlugBaseUrl: www.rateplug.com/cc/fnf/rates.aspx
