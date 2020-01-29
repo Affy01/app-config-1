@@ -24,25 +24,24 @@ application:
 
 message:
   indexName: listings
-  idFieldKey: id
+  idFieldKey:
+    - id
+    - OriginatingSystemName
   idPrefix: aotf
-  delimiter: ~
   propDisableAutoIndex:
     - media
     - unitType
     - rooms
     - openHouse
+  delimiter: '~'
 
 
 elasticsearch:
   schema: http
-  host: localhost
+  host:  4dbae629fa06424088fc54164b4b94b0.int-ece-main-proxy.elastic.int.idap.clgxdata.com
   port: 9200
-  username: ''
-  password: ''
+  username: clgx_readwrite
+  password: qagagibapi
   connectTimeout: 10000
   socketTimeout: 10000
   maxRetryTimeout: 10000
-
-server:
-  port: 0
