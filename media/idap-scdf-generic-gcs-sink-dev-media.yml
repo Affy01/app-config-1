@@ -24,10 +24,10 @@ application:
 
 
 message:
-  messageKey: MediaKey
-  parentKey: ResourceRecordKey
-  blobFileKeys: MediaKey,Nucleus_PostDate
-  delimiter: _
+  messageKey: MediaKey,OriginatingSystemName
+  parentKey: ResourceRecordKey,OriginatingSystemName
+  blobFileKeys: MediaKey,OriginatingSystemName,Nucleus_PostDate
+  delimiter: '~'
   filePrefix: Media
 
 server:
