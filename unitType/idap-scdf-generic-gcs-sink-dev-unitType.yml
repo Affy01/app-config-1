@@ -24,10 +24,10 @@ application:
 
 
 message:
-  messageKey: UnitTypeKey
-  parentKey: ListingKey
-  blobFileKeys: UnitTypeKey,Nucleus_PostDate
-  delimiter: _
+  messageKey: UnitTypeKey,OriginatingSystemName
+  parentKey: ListingKey,OriginatingSystemName
+  blobFileKeys: UnitTypeKey,OriginatingSystemName,Nucleus_PostDate
+  delimiter: '~'
   filePrefix: UnitType
 
 server:
