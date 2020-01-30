@@ -28,8 +28,8 @@ message:
   parentRecordName: listing
   childRecordName: media
   collection: true
-  parentKey: ResourceRecordKey
-  messageKey: MediaKey
+  parentKey: listingId
+  messageKey: messageId
 
 
 server:
