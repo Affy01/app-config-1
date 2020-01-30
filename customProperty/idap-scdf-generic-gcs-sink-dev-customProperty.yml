@@ -24,9 +24,9 @@ application:
 
 
 message:
-  messageKey: ListingKey
-  parentKey: ListingKey
-  blobFileKeys: ListingKey,Nucleus_PostDate
+  messageKey: ListingKey,OriginatingSystemName
+  parentKey: ListingKey,OriginatingSystemName
+  blobFileKeys: ListingKey,OriginatingSystemName,Nucleus_PostDate
   delimiter: _
   filePrefix: CustomProperty
 
