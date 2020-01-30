@@ -24,9 +24,9 @@ application:
 
 
 message:
-  messageKey: OpenHouseKey
-  parentKey: ListingKey
-  blobFileKeys: OpenHouseKey,Nucleus_PostDate
+  messageKey: OpenHouseKey,OriginatingSystemName
+  parentKey: ListingKey,OriginatingSystemName
+  blobFileKeys: OpenHouseKey,OriginatingSystemName,Nucleus_PostDate
   delimiter: _
   filePrefix: OpenHouse
 
