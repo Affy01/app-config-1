@@ -28,7 +28,7 @@ spring.cloud.stream.kafka.bindings:
 application:
   schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
-  schemaFilePath: /Users/rahulgoyal/aotf/core-logic/data-pipeline/idap-scdf-JSON2avro/src/main/resources/avro/media-schema.avsc
+  schemaFilePath: /avro/media-schema.avsc
   deadLetterTopic: media-dead-jsonAvro
   group: media-group-jsonAvro
   maxRetries: 2
