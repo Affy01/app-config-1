@@ -27,7 +27,7 @@ message:
   messageKey: OpenHouseKey,OriginatingSystemName
   parentKey: ListingKey,OriginatingSystemName
   blobFileKeys: OpenHouseKey,OriginatingSystemName,Nucleus_PostDate
-  delimiter: _
+  delimiter: '~'
   filePrefix: OpenHouse
 
 server:
