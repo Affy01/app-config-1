@@ -24,10 +24,10 @@ application:
 
 
 message:
-  messageKey: RoomKey
-  parentKey: ListingKey
-  blobFileKeys: RoomKey,Nucleus_PostDate
-  delimiter: _
+  messageKey: RoomKey,OriginatingSystemName
+  parentKey: ListingKey,OriginatingSystemName
+  blobFileKeys: RoomKey,OriginatingSystemName,Nucleus_PostDate
+  delimiter: '~'
   filePrefix: Rooms
 
 server:
