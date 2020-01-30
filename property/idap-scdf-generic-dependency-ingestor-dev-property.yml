@@ -28,8 +28,8 @@ message:
   parentRecordName: listing
   childRecordName: property
   collection: false
-  parentKey: ListingKey
-  messageKey: ListingKey
+  parentKey: listingId
+  messageKey: messageId
 
 
 server:
