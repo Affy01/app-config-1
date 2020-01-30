@@ -27,7 +27,7 @@ message:
   messageKey: ListingKey,OriginatingSystemName
   parentKey: ListingKey,OriginatingSystemName
   blobFileKeys: ListingKey,OriginatingSystemName,Nucleus_PostDate
-  delimiter: _
+  delimiter: '~'
   filePrefix: CustomProperty
 
 server:
