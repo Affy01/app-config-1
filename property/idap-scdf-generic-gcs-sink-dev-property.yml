@@ -25,10 +25,10 @@ application:
 
 
 message:
-  messageKey: ListingKey
-  parentKey: ListingKey
-  blobFileKeys: ListingKey,Nucleus_PostDate
-  delimiter: _
+  messageKey: ListingKey,OriginatingSystemName
+  parentKey: ListingKey,OriginatingSystemName
+  blobFileKeys: ListingKey,OriginatingSystemName,Nucleus_PostDate
+  delimiter: '~'
   filePrefix: Property
 
 server:
