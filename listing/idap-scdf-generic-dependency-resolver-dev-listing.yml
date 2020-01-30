@@ -28,15 +28,23 @@ app:
   keywords:
     - Appliances
     - LotFeatures
+    - Cooling
+    - ExteriorFeatures
+    - Roof
+    - ParkingFeatures
+    - Heating
+    - CommunityFeatures
   dprMLS:
     MIBOR: MIBOR
     FMLSD: FMLS
     NEOHREX: NEOHREX
     ACTRIS: ACTRIS
+    YES-MLS: YES-MLS
   ratePlugMls:
     CML: CAROLINAMLS
     FLL: RAGFL
     FMLSD: FMLS
     ACTRIS: ACTRIS
+    YES-MLS: YES-MLS
   dprBaseUrl: www.workforce-resource.com/dpr/listing
   ratePlugBaseUrl: www.rateplug.com/cc/fnf/rates.aspx
