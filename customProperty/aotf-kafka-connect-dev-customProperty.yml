@@ -28,9 +28,9 @@ spring.cloud.stream:
       default-binder: kafka1
 
 application:
-  sourceHost: kafka-main.preprod.idap.clgx.cloud:9092
+  sourceHost: dev-kafka-shared-broker-1.kafka.dev.idap.clgxdata.com:9092
   destHost: localhost:9092
-  sourceTopic: v0611_Elastic_CustomProperty
+  sourceTopic: v1_Elastic_CustomProperty
   sourceGroupName: customProperty_source_group
 
 
