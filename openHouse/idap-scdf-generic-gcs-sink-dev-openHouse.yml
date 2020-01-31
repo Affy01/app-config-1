@@ -15,7 +15,8 @@ spring.cloud.stream:
 
 
 application:
-  bucketName: spring-gcp-storage-test
+  bucketName: aotf-listing-events
+  gcsServiceAccountFile: /gcs_bucket_service_account.json
   group: openHouse-group-gcs
   schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
