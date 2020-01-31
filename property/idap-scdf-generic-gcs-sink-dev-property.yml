@@ -18,7 +18,7 @@ application:
   bucketName: aotf-listing-events
   gcsServiceAccountFile: /gcs_bucket_service_account.json
   group: property-group-gcs
-  schemaRegistryUrl: http://dev-kafka-shared-registry.kafka.dev.idap.clgxdata.com:8080
+  schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
   deadLetterTopic: property-dead-gcs
   maxRetries: 2
