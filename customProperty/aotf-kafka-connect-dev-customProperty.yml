@@ -30,7 +30,7 @@ spring.cloud.stream:
 application:
   sourceHost: dev-kafka-shared-broker-1.kafka.dev.idap.clgxdata.com:9092
   destHost: localhost:9092
-  sourceTopic: v1_UAT_Elastic_CustomProperty
+  sourceTopic: v1_Dev_Elastic_CustomProperty
   sourceGroupName: customProperty_source_group
 
 
