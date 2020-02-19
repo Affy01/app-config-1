@@ -39,8 +39,8 @@ elasticsearch:
   schema: http
   host:  4dbae629fa06424088fc54164b4b94b0.int-ece-main-proxy.elastic.int.idap.clgxdata.com
   port: 9200
-  username: clgx_readwrite
-  password: qagagibapi
+  username: clgx_elastic_admin
+  password: huzucinunu
   connectTimeout: 10000
   socketTimeout: 10000
   maxRetryTimeout: 10000
