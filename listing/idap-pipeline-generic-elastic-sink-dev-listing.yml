@@ -37,7 +37,7 @@ message:
 
 elasticsearch:
   schema: http
-  host:  localhost
+  host:  4dbae629fa06424088fc54164b4b94b0.int-ece-main-proxy.elastic.int.idap.clgxdata.com
   port: 9200
   username: clgx_readwrite
   password: qagagibapi
