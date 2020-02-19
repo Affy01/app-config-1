@@ -39,12 +39,12 @@ app:
     FMLSD: FMLS
     NEOHREX: NEOHREX
     ACTRIS: ACTRIS
-    YES-MLS: YES-MLS
+    YESMLS_AOTF_DEV: YESMLS_AOTF_DEV
   ratePlugMls:
     CML: CAROLINAMLS
     FLL: RAGFL
     FMLSD: FMLS
     ACTRIS: ACTRIS
-    YES-MLS: YES-MLS
+    YESMLS_AOTF_DEV: YESMLS_AOTF_DEV
   dprBaseUrl: www.workforce-resource.com/dpr/listing
   ratePlugBaseUrl: www.rateplug.com/cc/fnf/rates.aspx
