@@ -31,7 +31,7 @@ application:
   sourceHost: dev-kafka-shared-broker-1.kafka.dev.idap.clgxdata.com:9092
   destHost: localhost:9092
   sourceTopic: v1_Dev_Debug_Elastic_Property
-  sourceGroupName: property_source_group_dev_debug_3
+  sourceGroupName: property_source_group_dev_debug_4
 
 
 server:
