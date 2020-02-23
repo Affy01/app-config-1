@@ -10,7 +10,7 @@ spring.cloud.stream:
       brokers: localhost
       producer-properties:
         value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
-        schema.registry.url: http://localhost:8081
+        schema.registry.url: ${application.schema-registry-url}
 
 spring.cloud.stream.default:
   producer:
@@ -40,5 +40,5 @@ message:
     OriginatingSystemName:
       - ALL
 
-server:
-  port: 0
+
+
