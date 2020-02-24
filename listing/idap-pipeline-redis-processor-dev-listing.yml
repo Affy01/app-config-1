@@ -3,6 +3,9 @@ spring.cloud.stream.bindings:
     group: ${application.group}
     consumer:
       max-attempts: ${application.max-retries}
+  output:
+    producer:
+      partition-count: 12
 
 spring:
    cloud:
