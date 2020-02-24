@@ -8,7 +8,6 @@ spring.cloud.stream:
           contentType: application/*+avro
         output:
           producer:
-            partitioned: true
             partition-count: 12
       kafka:
         binder:
