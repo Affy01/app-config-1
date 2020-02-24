@@ -5,7 +5,7 @@ spring.cloud.stream.bindings:
       max-attempts: ${application.max-retries}
   output:
     producer:
-      partition-count: 12
+      partition-count: 48
 
 spring:
   cloud:
@@ -13,6 +13,7 @@ spring:
       kafka:
         binder:
           auto-add-partitions: true
+          minPartitionCount: 10
 
 spring.cloud.stream.kafka.bindings:
   input:
