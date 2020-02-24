@@ -6,8 +6,13 @@ spring.cloud.stream:
         input:
           group: ${application.group}
           contentType: application/*+avro
+        output:
+          producer:
+            partitioned: true
+            partition-count: 12
       kafka:
         binder:
+          auto-add-partitions: true
           consumer-properties:
             value.deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
             schema.registry.url: ${application.schema-registry-url}
