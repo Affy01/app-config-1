@@ -5,8 +5,6 @@ spring.cloud.stream.bindings:
       max-attempts: ${application.max-retries}
   output:
     contentType: application/json
-    producer:
-      partition-count: 12
         
 spring:
   cloud:
