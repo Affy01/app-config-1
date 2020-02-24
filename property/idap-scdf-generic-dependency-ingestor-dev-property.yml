@@ -3,9 +3,17 @@ spring.cloud.stream.bindings:
     group: ${application.group}
     consumer:
       max-attempts: ${application.max-retries}
+  output:
+    producer:
+        partitioned: true
+        partition-count: 12
 
-  redis:
-    host: localhost
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          auto-add-partitions: true
 
 spring.cloud.stream.kafka.bindings:
   input:
