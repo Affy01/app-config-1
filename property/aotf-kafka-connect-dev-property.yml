@@ -7,7 +7,7 @@ spring.cloud.stream:
         output:
           binder: kafka1
           producer:
-            partition-count: 12
+            partition-count: 48
       binders:
         kafka1:
           type: kafka
@@ -19,6 +19,7 @@ spring.cloud.stream:
                     binder:
                       brokers: ${application.dest-host}
                       auto-add-partitions: true
+                      minPartitionCount: 10
         kafka2:
           type: kafka
           environment:
