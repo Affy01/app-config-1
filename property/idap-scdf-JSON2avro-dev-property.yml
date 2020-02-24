@@ -3,10 +3,14 @@ spring.cloud.stream.bindings:
     group: ${application.group}
   output:
     contentType: application/*+avro
+    producer:
+        partitioned: true
+        partition-count: 12
 
 spring.cloud.stream:
   kafka:
     binder:
+      auto-add-partitions: true
       brokers: localhost
       producer-properties:
         value.serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
