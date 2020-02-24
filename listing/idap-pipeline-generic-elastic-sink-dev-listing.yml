@@ -6,8 +6,8 @@ spring.cloud.stream.bindings:
   output:
     contentType: application/json
     producer:
-        partitioned: true
-        partition-count: 12
+      partitioned: true
+      partition-count: 12
         
 spring:
   cloud:
