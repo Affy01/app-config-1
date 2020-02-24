@@ -7,7 +7,6 @@ spring.cloud.stream:
         output:
           binder: kafka1
           producer:
-            partitioned: true
             partition-count: 12
       binders:
         kafka1:
