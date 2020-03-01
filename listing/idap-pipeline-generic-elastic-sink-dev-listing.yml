@@ -23,7 +23,7 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 application:
-  schemaRegistryPath: http://localhost:8081
+  schemaRegistryPath: http://schema-registry:8081
   schemaRegistryCacheCapacity: 1
   deadLetterTopic: listings-elastic-dead
   maxRetries: 2
