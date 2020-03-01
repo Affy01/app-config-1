@@ -31,6 +31,7 @@ application:
 
 message:
   indexName: listings
+  executeScript: true
   idFieldKey:
     - id
   idPrefix: aotf
