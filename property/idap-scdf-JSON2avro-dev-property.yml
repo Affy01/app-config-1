@@ -30,7 +30,7 @@ spring.cloud.stream.kafka.bindings:
       republish-to-dlq: true
 
 application:
-  schemaRegistryUrl: http://schema-registry:8081
+  schemaRegistryUrl: http://localhost:8081
   schemaRegistryCacheCapacity: 10
   schemaFilePath: /avro/property-schema.avsc
   deadLetterTopic: property-dead-jsonAvro
