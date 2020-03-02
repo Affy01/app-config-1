@@ -30,8 +30,8 @@ spring.cloud.stream:
 application:
   sourceHost: dev-kafka-shared-broker-1.kafka.dev.idap.clgxdata.com:9092
   destHost: localhost:9092
-  sourceTopic: v1_Dev_Debug_Elastic_Media
-  sourceGroupName: media_source_group_dev_debug_9
+  sourceTopic: v1_Dev_Debug_XLarge_Elastic_Media
+  sourceGroupName: media_source_group_dev_debug_local
 
 
 server:
